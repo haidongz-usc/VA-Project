@@ -1,0 +1,22 @@
+cuda: True
+ngpu: 1
+gpu_id: '0'
+data_dir: /home/luka/homework/std/va2/VA_Project/Train       # replace it as your data path
+flist: '/home/luka/homework/std/va2/VA_Project/proj_demo/filelists/train_filelist.txt'
+workers: 4
+batchSize: 64
+manualSeed: 
+adam: True
+lr: 0.0001
+lr_decay: 0.7
+lr_decay_epoch: 10
+momentum: 0.9
+weight_decay: 0.0001
+max_epochs: 300
+print_freq: 5
+epoch_save: 2
+checkpoint_folder: ./checkpoints_test
+prefix: 'VA_METRIC'
+model: ''
+gradient_clip: 0.01
+init_model: './checkpoints/model_1.pth'
